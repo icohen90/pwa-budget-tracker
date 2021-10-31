@@ -16,8 +16,8 @@ In order to install this application you should clone the github repo found here
 
 
 # Screenshots 
-Walkthrough Video of working api routes
-<a href="https://watch.screencastify.com/v/GBxBiHzqgJqURtDKM928">Click Here for Video</a>
+Screenshot of working app
+<img src="https://github.com/icohen90/pwa-budget-tracker/blob/main/image.png">
 
 
 # Built With

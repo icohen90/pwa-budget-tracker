@@ -40,10 +40,10 @@ function saveRecord(record) {
 
   function uploadPizza() {
     // open a transaction on your db
-    const transaction = db.transaction(['new_pizza'], 'readwrite');
+    const transaction = db.transaction(['budget_tracker'], 'readwrite');
   
     // access your object store
-    const pizzaObjectStore = transaction.objectStore('new_pizza');
+    const pizzaObjectStore = transaction.objectStore('budget_tracker');
   
     // get all records from store and set to a variable
     const getAll = pizzaObjectStore.getAll();
@@ -66,9 +66,9 @@ function saveRecord(record) {
                 throw new Error(serverResponse);
             }
             // open one more transaction
-            const transaction = db.transaction(['new_pizza'], 'readwrite');
+            const transaction = db.transaction(['budget_tracker'], 'readwrite');
             // access the new_pizza object store
-            const pizzaObjectStore = transaction.objectStore('new_pizza');
+            const pizzaObjectStore = transaction.objectStore('budget_tracker');
             // clear all items in your store
             pizzaObjectStore.clear();
 
